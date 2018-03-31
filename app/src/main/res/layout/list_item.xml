@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="@dimen/main_margin">
+
+    <ImageView
+        android:id="@+id/cover_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cover_small" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/main_margin">
+
+        <TextView
+            android:id="@+id/song_name_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miss The Girl"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/band_name_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Creatures"
+            android:textAllCaps="true"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/play_icon_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/main_margin_double"
+            android:src="@drawable/play_small"
+            android:layout_toLeftOf="@id/plus_icon_small"/>
+
+        <ImageView
+            android:id="@+id/plus_icon_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/main_margin_double"
+            android:src="@drawable/plus_small"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
 
 </LinearLayout>
