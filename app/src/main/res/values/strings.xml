@@ -3,4 +3,10 @@
     <string name="title_activity_favorites">FavoritesActivity</string>
     <string name="miss_the_girl">Miss The Girl</string>
     <string name="the_creatures">The Creatures</string>
+    <string name="songs">Songs</string>
+    <string name="albums">Albums</string>
+    <string name="tags">Tags</string>
+    <string name="artists">Artists</string>
+    <string name="playlists">Playlists</string>
+    <string name="favorites">Favorites</string>
 </resources>
