@@ -13,7 +13,7 @@ public class AlbumsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_albums);
 
-        //        ArrayList of songs
+        //        ArrayList of albums
 
         ArrayList<Song> songs = new ArrayList<Song>();
         songs.add(new com.rajewska.misimusicapp.Song("Miss The Girl", "The Creatures", R.drawable.missthegirl_small));

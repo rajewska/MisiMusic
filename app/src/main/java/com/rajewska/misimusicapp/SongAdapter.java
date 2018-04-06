@@ -22,7 +22,6 @@ public class SongAdapter extends ArrayAdapter <com.rajewska.misimusicapp.Song> {
         super(context, 0, songs);
     }
 
-
     public View getView(int position, View convertView, ViewGroup parent) {
         // Check if the existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
@@ -38,25 +37,41 @@ public class SongAdapter extends ArrayAdapter <com.rajewska.misimusicapp.Song> {
         // Find the TextView in the list_item.xml layout with the ID song_name_list
 
         TextView songTextView = (TextView) listItemView.findViewById(R.id.song_name_list);
+
         // Get the version name from the current Song object and
-        // set this text on the name TextView
+        // set this text on the name TextView. If the text is missing - set the visibility to GONE
+
         songTextView.setText(currentSong.getSongName());
 
+        songTextView.setVisibility(View.VISIBLE);
+
+        if (songTextView.length() < 1) {
+            songTextView.setVisibility(View.GONE);
+            }
+
         // Find the TextView in the list_item.xml layout with the ID band_name_list
+
         TextView bandTextView = (TextView) listItemView.findViewById(R.id.band_name_list);
 
         // Get the version number from the current Song object and
-        // set this text on the number TextView
+        // set this text on the number TextView. If the text is missing - set the visibility to GONE
 
         bandTextView.setText(currentSong.getBandName());
+
+        bandTextView.setVisibility(View.VISIBLE);
+
+        if (bandTextView.length() < 1) {
+            bandTextView.setVisibility(View.GONE);
+        }
 
         // Find the ImageView in the list_item.xml layout with the ID
 
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.cover_list);
 
-        // Get the image resource ID from the current Song object and
+        // Get the image resource ID from the current Song object and set it to the ImageView.
+        // If the image is missing - set the visibility to GONE
+
         if (currentSong.hasImage()) {
-            // set the image to iconView
             imageView.setImageResource(currentSong.getImageResourceId());
             imageView.setVisibility(View.VISIBLE);
         } else {

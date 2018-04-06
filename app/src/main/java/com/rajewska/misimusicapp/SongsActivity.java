@@ -38,8 +38,6 @@ public class SongsActivity extends AppCompatActivity {
         songs.add(new com.rajewska.misimusicapp.Song("Send His Love To Me", "PJ Harvey", R.drawable.tobringyoumylove_small));
         songs.add(new com.rajewska.misimusicapp.Song("The Dancer", "PJ Harvey", R.drawable.tobringyoumylove_small));
 
-
-
         SongAdapter adapter = new SongAdapter(this, songs);
 
         ListView listView = (ListView) findViewById(R.id.list);

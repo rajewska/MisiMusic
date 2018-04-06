@@ -13,7 +13,6 @@ public class Song {
 //    Album's cover
 
     private int mImageResourceId = NO_IMAGE_PROVIDED;
-
     private static final int NO_IMAGE_PROVIDED = -1;
 
 //    Create a new Song object.
@@ -39,6 +38,5 @@ public class Song {
 //    Get album's cover
 
     public int getImageResourceId() { return  mImageResourceId;}
-
     public boolean hasImage () {return mImageResourceId != NO_IMAGE_PROVIDED;}
 }
