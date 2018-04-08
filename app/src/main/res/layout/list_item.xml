@@ -7,7 +7,8 @@
     <ImageView
         android:id="@+id/cover_list"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/picture_of_an_album_cover"/>
 
     <LinearLayout
         android:id="@+id/text_container"
@@ -49,6 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/plus_icon_small"
+            android:contentDescription="@string/play_icon"
             android:padding="@dimen/main_margin_double"
             android:src="@mipmap/play_small" />
 
@@ -58,6 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
+            android:contentDescription="@string/plus_icon"
             android:padding="@dimen/main_margin"
             android:src="@mipmap/plus_small" />
 
