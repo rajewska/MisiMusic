@@ -16,14 +16,14 @@ public class AlbumsActivity extends AppCompatActivity {
         //        ArrayList of albums
 
         ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new com.rajewska.misimusicapp.Song("Miss The Girl", "The Creatures", R.drawable.missthegirl_small));
-        songs.add(new com.rajewska.misimusicapp.Song("With Sympathy", "Ministry", R.drawable.withsympathy_small));
-        songs.add(new com.rajewska.misimusicapp.Song("Further Down The Spiral", "Nine Inch Nails", R.drawable.furtherdown_small));
-        songs.add(new com.rajewska.misimusicapp.Song("20 Jazz Funk Greats", "Throbbing Gristle", R.drawable.jazzfunk_small));
-        songs.add(new com.rajewska.misimusicapp.Song("Nada!", "Death In June", R.drawable.nada_small));
-        songs.add(new com.rajewska.misimusicapp.Song("Power, Corruption & Lies", "New Order", R.drawable.powercorruption_small));
-        songs.add(new com.rajewska.misimusicapp.Song("Remain In Light", "Talking Heads", R.drawable.remaininlight_small));
-        songs.add(new com.rajewska.misimusicapp.Song("To Bring You My Love", "PJ Harvey", R.drawable.tobringyoumylove_small));
+        songs.add(new com.rajewska.misimusicapp.Song("Miss The Girl", "The Creatures", R.mipmap.missthegirl_small));
+        songs.add(new com.rajewska.misimusicapp.Song("With Sympathy", "Ministry", R.mipmap.withsympathy_small));
+        songs.add(new com.rajewska.misimusicapp.Song("Further Down The Spiral", "Nine Inch Nails", R.mipmap.furtherdown_small));
+        songs.add(new com.rajewska.misimusicapp.Song("20 Jazz Funk Greats", "Throbbing Gristle", R.mipmap.jazzfunk_small));
+        songs.add(new com.rajewska.misimusicapp.Song("Nada!", "Death In June", R.mipmap.nada_small));
+        songs.add(new com.rajewska.misimusicapp.Song("Power, Corruption & Lies", "New Order", R.mipmap.powercorruption_small));
+        songs.add(new com.rajewska.misimusicapp.Song("Remain In Light", "Talking Heads", R.mipmap.remaininlight_small));
+        songs.add(new com.rajewska.misimusicapp.Song("To Bring You My Love", "PJ Harvey", R.mipmap.tobringyoumylove_small));
 
         SongAdapter adapter = new SongAdapter(this, songs);
 

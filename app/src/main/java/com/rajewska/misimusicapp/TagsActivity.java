@@ -16,18 +16,18 @@ public class TagsActivity extends AppCompatActivity {
 //        ArrayList of tags
 
         ArrayList<Song> songs = new ArrayList<Song>();
-        songs.add(new com.rajewska.misimusicapp.Song("#newwave", "", R.drawable.playlist1_small));
-        songs.add(new com.rajewska.misimusicapp.Song("#goth", "", R.drawable.playlist2_small));
-        songs.add(new com.rajewska.misimusicapp.Song("#femalevocalists", "", R.drawable.playlist3_small));
-        songs.add(new com.rajewska.misimusicapp.Song("#80s", "", R.drawable.playlist1_small));
-        songs.add(new com.rajewska.misimusicapp.Song("#industrial", "", R.drawable.playlist2_small));
-        songs.add(new com.rajewska.misimusicapp.Song("#depression", "", R.drawable.playlist3_small));
-        songs.add(new com.rajewska.misimusicapp.Song("#postpunk", "", R.drawable.playlist1_small));
-        songs.add(new com.rajewska.misimusicapp.Song("#deramboss", "", R.drawable.playlist2_small));
-        songs.add(new com.rajewska.misimusicapp.Song("#british", "", R.drawable.playlist3_small));
-        songs.add(new com.rajewska.misimusicapp.Song("#alternative", "", R.drawable.playlist1_small));
-        songs.add(new com.rajewska.misimusicapp.Song("#darkwave", "", R.drawable.playlist2_small));
-        songs.add(new com.rajewska.misimusicapp.Song("#sad", "", R.drawable.playlist3_small));
+        songs.add(new com.rajewska.misimusicapp.Song("#newwave", "", R.mipmap.playlist1_small));
+        songs.add(new com.rajewska.misimusicapp.Song("#goth", "", R.mipmap.playlist2_small));
+        songs.add(new com.rajewska.misimusicapp.Song("#femalevocalists", "", R.mipmap.playlist3_small));
+        songs.add(new com.rajewska.misimusicapp.Song("#80s", "", R.mipmap.playlist1_small));
+        songs.add(new com.rajewska.misimusicapp.Song("#industrial", "", R.mipmap.playlist2_small));
+        songs.add(new com.rajewska.misimusicapp.Song("#depression", "", R.mipmap.playlist3_small));
+        songs.add(new com.rajewska.misimusicapp.Song("#postpunk", "", R.mipmap.playlist1_small));
+        songs.add(new com.rajewska.misimusicapp.Song("#deramboss", "", R.mipmap.playlist2_small));
+        songs.add(new com.rajewska.misimusicapp.Song("#british", "", R.mipmap.playlist3_small));
+        songs.add(new com.rajewska.misimusicapp.Song("#alternative", "", R.mipmap.playlist1_small));
+        songs.add(new com.rajewska.misimusicapp.Song("#darkwave", "", R.mipmap.playlist2_small));
+        songs.add(new com.rajewska.misimusicapp.Song("#sad", "", R.mipmap.playlist3_small));
 
         SongAdapter adapter = new SongAdapter(this, songs);
 

@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/misi"
+        android:icon="@mipmap/misi"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/misi"
+        android:roundIcon="@mipmap/misi"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">

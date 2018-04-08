@@ -7,8 +7,7 @@
     <ImageView
         android:id="@+id/cover_list"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/missthegirl_small" />
+        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:id="@+id/text_container"
@@ -51,7 +50,7 @@
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/plus_icon_small"
             android:padding="@dimen/main_margin_double"
-            android:src="@drawable/play_small" />
+            android:src="@mipmap/play_small" />
 
         <ImageView
             android:id="@+id/plus_icon_small"
@@ -60,7 +59,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:padding="@dimen/main_margin"
-            android:src="@drawable/plus_small" />
+            android:src="@mipmap/plus_small" />
 
     </RelativeLayout>
 
